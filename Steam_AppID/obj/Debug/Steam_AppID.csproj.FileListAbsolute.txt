@@ -1,0 +1,7 @@
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\bin\Debug\Steam_AppID.exe
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\bin\Debug\Steam_AppID.pdb
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\obj\Debug\Steam_AppID.csprojResolveAssemblyReference.cache
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\obj\Debug\Steam_AppID.MainForm.resources
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\obj\Debug\Steam_AppID.csproj.GenerateResource.Cache
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\obj\Debug\Steam_AppID.exe
+C:\Users\Mario\Documents\SharpDevelop Projects\Steam_AppID\Steam_AppID\obj\Debug\Steam_AppID.pdb
