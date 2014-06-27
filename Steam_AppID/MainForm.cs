@@ -78,9 +78,6 @@ namespace Steam_AppID
 		textBox2.Text = folder;
 		}
 		
-		else
-		;
-	
 		}
 		void Button2Click(object sender, System.EventArgs e)
 		{
