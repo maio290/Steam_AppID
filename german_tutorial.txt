@@ -2,7 +2,7 @@ Nachdem ihr das Tool gestartet habt, müsst ihr oben bei "Directory" einen Ordne
 
 Ein Beispiel-Ordner wäre "E:\Spiele\Steam\steamapps\common\dear esther".
 
-Dazu könnt ihr entweder den Ordnersuchdialog bei "Browse" verwenden, oder das Verzeichnis oben eintippen und dann auf "Set (using Text-Input)" klicken.
+Dazu könnt ihr entweder den Ordnersuchdialog bei "Browse" verwenden, oder das Verzeichnis oben eintippen / hinein kopieren.
 
 Bei Game Executable könnt ihr die *.exe Datei des Spiels auswählen - dies wird nur benötigt, wenn ihr das Spiel nach dem Patchen direkt starten wollt (dazu einfach den Haken bei Launch Game setzen). 
 
@@ -10,7 +10,7 @@ WICHTIG: Wenn ihr das Spiel, bei welchem ihr die App-ID manipuliert direkt über
 Startet das Spiel also nur über die *.exe Datei im Ordner.
 
 
-Bei Target App-ID kommt die App-ID des Spiels rein, welches ihr vorgaukeln möchtet. Mit einem klick auf Get App-IDs öffnet sich eine Website (steamdb.info) dort könnt ihr nach eurem gewünschten Spiel suchen. 
+Bei Target App-ID kommt die App-ID des Spiels rein, welches ihr vorgaukeln möchtet. Mit einem Klick auf Get App-IDs öffnet sich eine Website (steamdb.info) dort könnt ihr nach eurem gewünschten Spiel suchen. 
 Tragt die gefundene App-ID bei Target App-ID ein und klickt auf "Patch".
 
 Sollte alles richtig eingestellt sein, sollte ein Fenster mit "Patching successfull" kommen. Falls ein Fehler kommt, habt ihr den Ordner nicht richtig eingestellt oder der Ordner enthält keine "steam_appid.txt".

@@ -1,12 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Mario
- * Date: 20.06.2014
- * Time: 00:36
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
@@ -27,10 +19,7 @@ namespace Steam_AppID
 			//
 			InitializeComponent();
 
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+		
 		}
 		
 		
@@ -45,7 +34,7 @@ namespace Steam_AppID
 		
 		void MainFormLoad(object sender, EventArgs e)
 		{
-					textBox2.Text = @"Select Folder (must contain a steam_appid.txt)";
+					
 					if(File.Exists(rundir + config_file))
 					{
 						using (var reader = new StreamReader(rundir + config_file))
@@ -64,12 +53,16 @@ namespace Steam_AppID
 					        }
 
 					}
+					else
+					{
+						textBox2.Text = @"Select Folder (must contain a steam_appid.txt)";
+					}
 		}
 		
 		void Button1Click(object sender, EventArgs e)
 		{
 		System.Windows.Forms.FolderBrowserDialog objDialog = new FolderBrowserDialog();
-		objDialog.Description = "Description";
+		objDialog.Description = "Select a Folder with a steam_appid.txt from /steamapps/common/";
 		objDialog.SelectedPath=@"C:\";    
 		DialogResult objResult = objDialog.ShowDialog(this);
 		if (objResult == DialogResult.OK)
@@ -84,7 +77,7 @@ namespace Steam_AppID
 				
 			
 			if(File.Exists(folder + filename))
-			 {
+				{
 			        File.Delete(folder + filename);
 			        FileStream appid = new FileStream(folder + filename,FileMode.OpenOrCreate, FileAccess.Write);
 			        StreamWriter writer = new StreamWriter(appid);
@@ -100,11 +93,11 @@ namespace Steam_AppID
 			        cfg.Close();
 			        MessageBox.Show("Successfully patched", "Steam App-ID Changer", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
 			        	 if(checkBox1.Checked)
-						{
-					 	System.Diagnostics.Process.Start(start_file);
-						}
+							{
+					 		Process.Start(start_file);
+							}
 			        
-			 }
+				}
 			else
 			{
 			MessageBox.Show("Patching unsuccessfull", "Steam App-ID Changer", 
@@ -119,7 +112,7 @@ namespace Steam_AppID
 		
 		void TextBox2TextChanged(object sender, EventArgs e)
 		{
-			
+			folder = textBox2.Text;
 		}
 		
 		void Label3Click(object sender, EventArgs e)
@@ -140,31 +133,24 @@ namespace Steam_AppID
 		void Button4Click(object sender, EventArgs e)
 		{
 			textBox2.Text = "";
+			folder = "";
 		}
 		
 		
-		void ListBox1SelectedIndexChanged(object sender, EventArgs e)
-		{
-			
-		}
+
 		
 		void CheckBox1CheckedChanged(object sender, EventArgs e)
 		{
 
 		}
 		
-		void ComboBox1SelectedIndexChanged(object sender, EventArgs e)
-		{
-			
 
-				
-		}
 		
 		void Button5Click(object sender, EventArgs e)
 		{
 			OpenFileDialog openFileDialog1 = new OpenFileDialog();
 			openFileDialog1.InitialDirectory = folder ;
-			openFileDialog1.Filter = "exe files(*.exe)|*.exe";
+			openFileDialog1.Filter = "Executable File (*.exe)|*.exe";
 			 if(openFileDialog1.ShowDialog() == DialogResult.OK)
 			 {
 			 	 start_file = openFileDialog1.FileName;
@@ -186,14 +172,6 @@ namespace Steam_AppID
 			
 		}
 		
-		void DataGridView1CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-			
-		}
-		
-		void DataGrid1Navigate(object sender, NavigateEventArgs ne)
-		{
-			
-		}
+
 	}
 }
