@@ -111,7 +111,6 @@ namespace Steam_AppID
 			this.label3.TabIndex = 6;
 			this.label3.Text = "Directory:";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.label3.Click += new System.EventHandler(this.Label3Click);
 			// 
 			// button3
 			// 
@@ -208,6 +207,7 @@ namespace Steam_AppID
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "MainForm";
 			this.Text = "Steam App-ID Changer";

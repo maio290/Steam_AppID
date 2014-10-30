@@ -114,16 +114,7 @@ namespace Steam_AppID
 		{
 			folder = textBox2.Text;
 		}
-		
-		void Label3Click(object sender, EventArgs e)
-		{
-			
-		}
-		
-		void Label2Click(object sender, EventArgs e)
-		{
-			
-		}
+
 		
 		void Button3Click(object sender, EventArgs e)
 		{
