@@ -1,5 +1,4 @@
 F:\Coding\Steam_AppID\Steam_AppID\bin\Release\Steam_AppID.exe
-F:\Coding\Steam_AppID\Steam_AppID\obj\Release\Steam_AppID.csprojResolveAssemblyReference.cache
 F:\Coding\Steam_AppID\Steam_AppID\obj\Release\Steam_AppID.MainForm.resources
 F:\Coding\Steam_AppID\Steam_AppID\obj\Release\Steam_AppID.csproj.GenerateResource.Cache
 F:\Coding\Steam_AppID\Steam_AppID\obj\Release\Steam_AppID.exe

@@ -36,7 +36,6 @@ namespace Steam_AppID
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -50,33 +49,28 @@ namespace Steam_AppID
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
-			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.button6 = new System.Windows.Forms.Button();
-			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(131, 114);
+			this.textBox1.Location = new System.Drawing.Point(131, 75);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(159, 20);
 			this.textBox1.TabIndex = 0;
-			this.textBox1.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(18, 117);
+			this.label1.Location = new System.Drawing.Point(12, 78);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(107, 20);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Target App-ID:\r\n";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.label1.Click += new System.EventHandler(this.Label1Click);
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(91, 38);
+			this.button1.Location = new System.Drawing.Point(127, 38);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(82, 23);
 			this.button1.TabIndex = 3;
@@ -87,7 +81,7 @@ namespace Steam_AppID
 			// button2
 			// 
 			this.button2.Cursor = System.Windows.Forms.Cursors.Default;
-			this.button2.Location = new System.Drawing.Point(179, 190);
+			this.button2.Location = new System.Drawing.Point(189, 135);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(230, 36);
 			this.button2.TabIndex = 4;
@@ -105,7 +99,7 @@ namespace Steam_AppID
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(18, 15);
+			this.label3.Location = new System.Drawing.Point(12, 15);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(67, 20);
 			this.label3.TabIndex = 6;
@@ -125,7 +119,7 @@ namespace Steam_AppID
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(18, 82);
+			this.label4.Location = new System.Drawing.Point(12, 111);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(107, 20);
 			this.label4.TabIndex = 11;
@@ -134,24 +128,23 @@ namespace Steam_AppID
 			// 
 			// textBox3
 			// 
-			this.textBox3.Location = new System.Drawing.Point(131, 79);
+			this.textBox3.Location = new System.Drawing.Point(131, 108);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(159, 20);
 			this.textBox3.TabIndex = 12;
 			// 
 			// checkBox1
 			// 
-			this.checkBox1.Location = new System.Drawing.Point(382, 79);
+			this.checkBox1.Location = new System.Drawing.Point(382, 108);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(134, 20);
 			this.checkBox1.TabIndex = 13;
 			this.checkBox1.Text = "Launch Game";
 			this.checkBox1.UseVisualStyleBackColor = true;
-			this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1CheckedChanged);
 			// 
 			// button4
 			// 
-			this.button4.Location = new System.Drawing.Point(179, 38);
+			this.button4.Location = new System.Drawing.Point(215, 38);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(75, 23);
 			this.button4.TabIndex = 14;
@@ -161,7 +154,7 @@ namespace Steam_AppID
 			// 
 			// button5
 			// 
-			this.button5.Location = new System.Drawing.Point(301, 77);
+			this.button5.Location = new System.Drawing.Point(301, 106);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(75, 23);
 			this.button5.TabIndex = 15;
@@ -169,14 +162,9 @@ namespace Steam_AppID
 			this.button5.UseVisualStyleBackColor = true;
 			this.button5.Click += new System.EventHandler(this.Button5Click);
 			// 
-			// openFileDialog1
-			// 
-			this.openFileDialog1.FileName = "*.exe";
-			this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.OpenFileDialog1FileOk);
-			// 
 			// button6
 			// 
-			this.button6.Location = new System.Drawing.Point(301, 111);
+			this.button6.Location = new System.Drawing.Point(301, 72);
 			this.button6.Name = "button6";
 			this.button6.Size = new System.Drawing.Size(75, 23);
 			this.button6.TabIndex = 16;
@@ -184,16 +172,12 @@ namespace Steam_AppID
 			this.button6.UseVisualStyleBackColor = true;
 			this.button6.Click += new System.EventHandler(this.Button6Click);
 			// 
-			// errorProvider1
-			// 
-			this.errorProvider1.ContainerControl = this;
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(629, 238);
+			this.ClientSize = new System.Drawing.Size(623, 183);
 			this.Controls.Add(this.button6);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
@@ -212,13 +196,10 @@ namespace Steam_AppID
 			this.Name = "MainForm";
 			this.Text = "Steam App-ID Changer";
 			this.Load += new System.EventHandler(this.MainFormLoad);
-			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
-		private System.Windows.Forms.ErrorProvider errorProvider1;
 		private System.Windows.Forms.Button button6;
-		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.TextBox textBox3;
@@ -231,17 +212,5 @@ namespace Steam_AppID
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox textBox1;
-		
-		
-		
-		void Label1Click(object sender, System.EventArgs e)
-		{
-			
-		}
-		
-		void MaskedTextBox1MaskInputRejected(object sender, System.Windows.Forms.MaskInputRejectedEventArgs e)
-		{
-			
-		}
 	}
 }
