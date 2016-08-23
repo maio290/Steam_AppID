@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
@@ -64,8 +64,14 @@ namespace Steam_AppID
 			        cfg.Close();
 			        MessageBox.Show("Successfully patched", "Steam App-ID Changer", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
 			        
-			        	 if(checkBox1.Checked)
-							{Process.Start(start_file);}}
+                		//Fix crashes because of unset WorkingDirectory e.g. when starting Super Meat Boy from this program 
+			        if(checkBox1.Checked)
+					{
+                        		ProcessStartInfo game = new ProcessStartInfo(start_file);
+                        		game.WorkingDirectory = folder;
+                        		Process.Start(game);
+                		}
+        		}
 						else{MessageBox.Show("Patching unsuccessfull", "Steam App-ID Changer", 
   		    				MessageBoxButtons.OK, MessageBoxIcon.Error);}
 
